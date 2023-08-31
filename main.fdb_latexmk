@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber main"] 1693483592 "main.bcf" "main.bbl" "main" 1693483802
-  "main.bcf" 1693483802 107142 eb6f0957246969fd6feef53b9763c7c1 "pdflatex"
+["biber main"] 1693484111 "main.bcf" "main.bbl" "main" 1693484240
+  "main.bcf" 1693484240 107142 eb6f0957246969fd6feef53b9763c7c1 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1693483801 "/Users/davidedomini/Desktop/latex-beamer-slide-template/main.tex" "main.pdf" "main" 1693483802
-  "/Users/davidedomini/Desktop/latex-beamer-slide-template/main.tex" 1693483592 3528 29889e9271c84b5c0399076bfa3e45e2 ""
+["pdflatex"] 1693484238 "/Users/davidedomini/Desktop/DL-project-slides/main.tex" "main.pdf" "main" 1693484240
+  "/Users/davidedomini/Desktop/DL-project-slides/main.tex" 1693484238 3567 5048f3721b9953f12d8a1e6a88586187 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/ecsi0600.tfm" 1136768653 3584 812f7e2de5681b983f3aeaadd29c79b6 ""
@@ -222,17 +222,17 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1653252013 2826442 3312d3343e9229fb9b017370c5a98242 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "beamercolorthemebolognafc.sty" 1693483365 1573 ca1116497af205d13038f9f66f74a5b3 ""
-  "beamerthemeAMSBolognaFC.sty" 1693483780 3252 98b8726815167d7b75f7473d2323b665 ""
-  "img/almacesena-background.pdf" 1693483639 261848 56839c668cfb36560d179960fe346899 ""
-  "main.aux" 1693483802 2983 4fd512657a971176efdfa6eb0b86132f "pdflatex"
-  "main.bbl" 1693483610 466 ee04f40f768daeed26442158e95aba61 "biber main"
-  "main.nav" 1693483802 1452 b077e0b43e8898379e645adb60fe397c "pdflatex"
-  "main.out" 1693483802 433 99bd15cf3a56f6746ff627ce5036d905 "pdflatex"
-  "main.run.xml" 1693483802 2310 801b2862ebc1e9be41fa68af6bcdc5b1 "pdflatex"
-  "main.tex" 1693483592 3528 29889e9271c84b5c0399076bfa3e45e2 ""
-  "main.toc" 1693483802 99 8194c82ced62b3eae1ceb5a9e25cae18 "pdflatex"
-  "main.vrb" 1693483802 56 2d97b8511d32b3041631f5ca9e13c7dd "pdflatex"
+  "beamercolorthemebolognafc.sty" 1693484075 1573 ca1116497af205d13038f9f66f74a5b3 ""
+  "beamerthemeAMSBolognaFC.sty" 1693484075 3252 98b8726815167d7b75f7473d2323b665 ""
+  "img/almacesena-background.pdf" 1693484075 261848 56839c668cfb36560d179960fe346899 ""
+  "main.aux" 1693484240 2983 4fd512657a971176efdfa6eb0b86132f "pdflatex"
+  "main.bbl" 1693484113 466 ee04f40f768daeed26442158e95aba61 "biber main"
+  "main.nav" 1693484240 1452 b077e0b43e8898379e645adb60fe397c "pdflatex"
+  "main.out" 1693484240 433 99bd15cf3a56f6746ff627ce5036d905 "pdflatex"
+  "main.run.xml" 1693484240 2310 801b2862ebc1e9be41fa68af6bcdc5b1 "pdflatex"
+  "main.tex" 1693484238 3567 5048f3721b9953f12d8a1e6a88586187 ""
+  "main.toc" 1693484240 99 8194c82ced62b3eae1ceb5a9e25cae18 "pdflatex"
+  "main.vrb" 1693484239 56 2d97b8511d32b3041631f5ca9e13c7dd "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"

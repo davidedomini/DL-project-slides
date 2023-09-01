@@ -67,27 +67,117 @@
 %%/////////
 
 %===============================================================================
-\section{First Section}
+\section{Background}
 %===============================================================================
 
 %/////////
-\begin{frame}[allowframebreaks]{First Slide}
+\begin{frame}{Proximal Policy Optimization}
 %/////////
-This is the first slide :)
+	\begin{block}{Main features}
+		\begin{itemize}
+			\item \emph{Policy-based} method;
+			\item \emph{On-policy} algorithm;
+			\item \emph{Actor-Critic} algorithm;
+			\item \emph{Clipped} surrogate objective function.
+		\end{itemize}
+	\end{block}
+\end{frame}
+%/////////
+
+%/////////
+\begin{frame}[allowframebreaks]{Actor-Critic methods} 
+%/////////
+\begin{columns}
+	\begin{column}{0.55\textwidth}
+		\begin{block}{Overview}
+			\begin{itemize}
+				\item Combination of \emph{value} and \emph{policy} based methods;
+				\item \emph{Actor} controls how the agent behaves;
+				\item \emph{Critic} evaluates the actions taken by the actor. 
+			\end{itemize}
+		\end{block}
+	\end{column}
+	\begin{column}{0.45\textwidth}
+	\includegraphics[width=\textwidth]{img/ac_method.pdf}
+	\end{column}
+\end{columns}
+	
+\centering
+
+\begin{alertblock}{Learning}
+	 	\begin{itemize}
+	 		\item The actor outputs the \emph{probability} of taking an \emph{action} in a given \emph{state};
+	 		\item The critic estimates the \emph{advantage} of taking that action in that state
+	 		\begin{itemize}
+				\item $Q(s,a)$ represents the \emph{expected cumulative reward} an agent can expect in a given state;
+				\item $V(s)$ represents the \emph{expected future reward} for a given state, \emph{regardless} of the action taken;
+			\end{itemize}
+	 		\item The advantage function is \emph{backpropagated} to both the networks.
+	 	\end{itemize}
+\end{alertblock}
+
+\begin{exampleblock}{Advantage function}
+	\begin{itemize}
+		\item A positive value indicates that  taking that action in that state is expected to yield a better
+			outcome than the average action;
+		\item Otherwise the agent needs to explore 
+			other actions or update the policy to improve the performance.
+	\end{itemize}
+\end{exampleblock}
+
+\end{frame}
+%/////////
+
+%/////////
+\begin{frame}{Clipped Loss Function}
+%/////////
+
 
 \end{frame}
 %/////////
 
 
+%/////////
+\begin{frame}{Pseudocode}
+%/////////
+\begin{figure}
+	\includegraphics[width=0.9\textwidth]{img/PPO-pseudocode.pdf}
+\end{figure}
+\end{frame}
+%/////////
+
+%/////////
+\begin{frame}{Reward to go}
+%/////////
+\begin{figure}
+	\includegraphics[width=0.6\textwidth]{img/reward-to-go.pdf}
+\end{figure}	
+\end{frame}
+%/////////
+
+
 %===============================================================================
-\section{Second section}
+\section{Project}
 %===============================================================================
 
 %/////////
-\begin{frame}[allowframebreaks, fragile]{Second Sldie}
+\begin{frame}{Tools}
+%/////////
+\begin{block}{Tools}
+	\begin{itemize}
+		\item \textbf{PyTorch}
+		\item \textbf{OpenAI Gym}
+		\item \textbf{TensorBoard}
+		\item \textbf{OpenCV}
+		\item \textbf{Numpy}
+	\end{itemize}
+\end{block}
+\end{frame}
 %/////////
 
-This is the second slide :)
+%/////////
+\begin{frame}{Test Environment}
+%/////////
 
 \end{frame}
 %/////////

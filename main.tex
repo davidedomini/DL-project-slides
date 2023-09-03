@@ -18,6 +18,8 @@
 \usepackage[ddmmyyyy]{datetime}
 \usepackage{comment}
 \usepackage{listings}
+\input{scala-def}
+\lstset{language=scafi}
 
 \renewcommand{\dateseparator}{}
 %\renewcommand{\thefootnote}{\fnsymbol{footnote}}
@@ -129,15 +131,6 @@
 %/////////
 
 %/////////
-\begin{frame}{Clipped Loss Function}
-%/////////
-
-
-\end{frame}
-%/////////
-
-
-%/////////
 \begin{frame}{Pseudocode}
 %/////////
 \begin{figure}
@@ -149,9 +142,23 @@
 %/////////
 \begin{frame}{Reward to go}
 %/////////
+
+\begin{block}{Reward to go}
+	The \emph{reward to go} estimates the discounted future reward that can be obtained 
+		starting from a given state $S_k$.
+\end{block}
+
 \begin{figure}
 	\includegraphics[width=0.6\textwidth]{img/reward-to-go.pdf}
 \end{figure}	
+\end{frame}
+%/////////
+
+%/////////
+\begin{frame}{Clipped Loss Function}
+%/////////
+	
+	
 \end{frame}
 %/////////
 
@@ -179,6 +186,38 @@
 \begin{frame}{Test Environment}
 %/////////
 
+% descrivi openai gym
+% descrivi l'env scelto
+
+\end{frame}
+%/////////
+
+%/////////
+\begin{frame}{Implementation}
+%/////////
+
+% descrivi la classe PPO
+% esempio di codice di come runnare l'esperimento
+
+\end{frame}
+%/////////
+
+%/////////
+\begin{frame}[fragile]{Normalization}
+%/////////
+\begin{block}{Advantages Normalization}
+	\begin{itemize}
+		\item Using raw advantges makes training higly \emph{unstable};
+		\item Numerical algorithms behave poorly when \emph{different dimensions} 
+			are also \emph{different in scale};
+		\item \emph{Normalization} is not in the pseudocode but \emph{in practice} it is very important.
+	\end{itemize}
+\end{block}
+
+\begin{lstlisting}
+A_k = (A_k - A_k.mean()) / (A_k.std() + 1e-10)
+\end{lstlisting}
+
 \end{frame}
 %/////////
 
@@ -197,14 +236,14 @@
 
 %%%%
 \setbeamertemplate{page number in head/foot}{}
-%/////////
-\begin{frame}[c,noframenumbering, allowframebreaks]{\refname}
-%\begin{frame}[t,allowframebreaks,noframenumbering]{\refname}
-	\tiny
-	\nocite{*}
-	\printbibliography
-\end{frame}
-%/////////
+% %/////////
+% \begin{frame}[c,noframenumbering, allowframebreaks]{\refname}
+% %\begin{frame}[t,allowframebreaks,noframenumbering]{\refname}
+% 	\tiny
+% 	\nocite{*}
+% 	\printbibliography
+% \end{frame}
+% %/////////
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}

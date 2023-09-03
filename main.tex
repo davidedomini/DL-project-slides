@@ -154,14 +154,6 @@
 \end{frame}
 %/////////
 
-%/////////
-\begin{frame}{Clipped Loss Function}
-%/////////
-	
-	
-\end{frame}
-%/////////
-
 
 %===============================================================================
 \section{Project}
@@ -186,8 +178,29 @@
 \begin{frame}{Test Environment}
 %/////////
 
-% descrivi openai gym
-% descrivi l'env scelto
+\begin{block}{OpenAI Gym}
+	\begin{itemize}
+		\item A toolkit developed by \emph{OpenAI}
+		\item Provides a wide variety of different environments for \emph{developing} and \emph{comparing} 
+			reinforcement learning algorithms.
+	\end{itemize}
+\end{block}
+
+\begin{columns}
+	\begin{column}{0.55\textwidth}
+		\begin{alertblock}{Bipedal Walker}
+			\begin{itemize}
+				\item This is a simple \emph{4-joint walker robot} environment;
+				\item The walker starts standing at the left end of the terrain;
+				\item The episode will terminate if the hull gets in contact with the 
+					ground or if the walker exceeds the right end of the terrain length.
+			\end{itemize}
+		\end{alertblock}
+	\end{column}
+	\begin{column}{0.45\textwidth}
+	\includegraphics[width=\textwidth]{img/bipedal.jpeg}
+	\end{column}
+\end{columns}
 
 \end{frame}
 %/////////
@@ -195,6 +208,24 @@
 %/////////
 \begin{frame}{Implementation}
 %/////////
+
+\begin{block}{ProximalPolicyOptimization class}
+	\begin{itemize}
+		\item Takes the \emph{environment} as input;
+		\item Initializes the \emph{Actor} and the \emph{Critic} networks;
+		\item The method \texttt{learn}:
+		\begin{itemize}
+			\item Takes as input the number of \emph{total timesteps};
+			\item Runs the learning;
+			\item Updates the networks weights;
+		\end{itemize}
+		\item The method \texttt{rollout} collects a set \emph{trajectories};
+		\item The method \texttt{get\_action} returns the \emph{action} to take in 
+			a given \emph{state};
+		\item The method \texttt{evaluate\_action} computes the value function of the \emph{action} 
+			in a given \emph{state}.
+	\end{itemize}
+\end{block}
 
 % descrivi la classe PPO
 % esempio di codice di come runnare l'esperimento

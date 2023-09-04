@@ -154,6 +154,28 @@
 \end{frame}
 %/////////
 
+%/////////
+\begin{frame}{Clipped objective function}
+%/////////
+
+\begin{block}{Clipped objective function}
+	\begin{itemize}
+		\item The left part of the $min$ function multiplies the \emph{advantage} obtained by the \emph{ratio} between 
+			the \emph{probability} of the action given by the \emph{current policy} and the probability of the action 
+			given by the \emph{old policy}. 
+		\item Using only this formula has a drawback; if the action is \emph{much more probable} in the new policy,
+			then the weight update would be too large, making the training \emph{unstable}.
+		\item Some algorithms use complex methods like the \emph{KL divergence} to avoid this problem; 
+		\item \emph{PPO} uses a simpler approach: it \emph{clips} the probability ratio. 
+	\end{itemize}
+\end{block}
+
+\begin{figure}
+	\includegraphics[width=0.6\textwidth]{img/clippedobjfun.png}
+\end{figure}	
+\end{frame}
+%/////////
+
 
 %===============================================================================
 \section{Project}
@@ -180,7 +202,7 @@
 
 \begin{block}{OpenAI Gym}
 	\begin{itemize}
-		\item A toolkit developed by \emph{OpenAI}
+		\item A toolkit developed by \emph{OpenAI};
 		\item Provides a wide variety of different environments for \emph{developing} and \emph{comparing} 
 			reinforcement learning algorithms.
 	\end{itemize}
